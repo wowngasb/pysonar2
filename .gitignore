@@ -1,4 +1,6 @@
 pysonar.iml
 
+.idea/
+
 target/
 tests/

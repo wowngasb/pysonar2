@@ -172,8 +172,10 @@ public class Demo {
         Options options = new Options(args);
 
         List<String> argsList = options.getArgs();
-        String fileOrDir = argsList.get(0);
-        OUTPUT_DIR = new File(argsList.get(1));
+        String fileOrDir = argsList.size() > 0 ? argsList.get(0) :"./" ;
+
+        String outDir =  argsList.size() > 1 ? argsList.get(1) : "./";
+        OUTPUT_DIR = new File(outDir);
 
 //        System.out.println("options: " + options.getOptionsMap());
         new Demo().start(fileOrDir, options.getOptionsMap());

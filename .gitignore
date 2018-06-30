@@ -4,3 +4,4 @@ pysonar.iml
 
 target/
 tests/
+*.py.html
